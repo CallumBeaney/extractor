@@ -17,6 +17,10 @@ int main(void)
         printf("Numbers must be in range");
         return 1;
     }
+    if (lower > upper){
+        printf("Start index cannot be higher than end index");
+        return 2;
+    }
 
     int filecounter = lower;
     char buffer[BUFFLEN];
